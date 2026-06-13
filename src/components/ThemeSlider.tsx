@@ -14,7 +14,7 @@ export function ThemeSlider() {
 
     return (
         <>
-            <div className="flex flex-row">
+            <div className="flex flex-row justify-end pr-2">
                 <svg width="34" height="34">
                     <defs>
                         <mask id="moonCut">
@@ -30,9 +30,9 @@ export function ThemeSlider() {
                         changeTheme();
                         setSliderState(sliderState === 0 ? 1 : 0);
                     }} 
-                    className="flex w-18 rounded-2xl bg-gray-900 pl-4.5 pr-4.5 pt-1 pb-1"
+                    className="flex w-18 rounded-2xl bg-gray-900 pl-4.5 pr-4.5 pt-1 pb-1 inset-shadow-xs inset-shadow-gray-500"
                 >
-                    <div className={`rounded-full bg-gray-100 p-3 transition ease-in-out duration-500 ${sliderState === 0 ? "-translate-x-3" : "translate-x-5"}`}></div>
+                    <div className={`rounded-full bg-gray-200 p-3 transition ease-in-out duration-500 ${sliderState === 0 ? "-translate-x-3" : "translate-x-6"}`}></div>
                 </div>
                 
                 <svg width="34" height="34">
