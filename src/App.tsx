@@ -1,6 +1,6 @@
+import { ThemeSlider } from './components/ThemeSlider.tsx';
 import { useState } from 'react'
 import './App.css'
-
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +16,10 @@ function App() {
         <div className="flex justify-center">
             <button onClick={increment} className="bg-cyan-300 rounded hover:bg-cyan-500 text-4xl pl-4 pr-4">test</button>
         </div>
-        
+         
+        <p className="dark:bg-cyan-900 bg-cyan-300">test</p>
+        <ThemeSlider/>
+
     </>
   )
 }
