@@ -30,7 +30,7 @@ export function ThemeSlider() {
                         changeTheme();
                         setSliderState(sliderState === 0 ? 1 : 0);
                     }} 
-                    className="flex w-18 rounded-2xl bg-gray-900 pl-4.5 pr-4.5 pt-1 pb-1 inset-shadow-xs inset-shadow-gray-500"
+                    className="flex w-18 rounded-2xl bg-zinc-900 pl-4.5 pr-4.5 pt-1 pb-1 inset-shadow-xs inset-shadow-zinc-600"
                 >
                     <div className={`rounded-full bg-gray-200 p-3 transition ease-in-out duration-500 ${sliderState === 0 ? "-translate-x-3" : "translate-x-6"}`}></div>
                 </div>
